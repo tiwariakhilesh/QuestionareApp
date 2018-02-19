@@ -1,0 +1,38 @@
+.buttonUpvote,.buttonDownvote{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font: inherit;
+    margin: 10px 0;
+    font-weight: bold;
+}
+.buttonUpvote{
+    color: #5C9210;
+}
+.buttonDownvote{
+    color: #944317;
+    margin-left:10px;
+}
+.post{
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom:15px;
+    width:100%;
+}
+.post p{
+    display:block;
+    width: 100%;
+}
+@media (min-width:768px){
+    .post p{
+        display:inline-block;
+        width: 50%;
+    }
+}
+.post p:first-child{
+    display:block;
+    padding: 5px;
+    width:100%;
+    padding: 20px 0;
+}
