@@ -110,7 +110,6 @@ class Form extends Component{
         this.reset();
     }
     reset=()=>{
-        console.log("akhilesh");
         const resetValues ={
             ...this.state.infoForm
         }

@@ -1,18 +1,34 @@
+.container{
+    width:100%;
+    height:100%;
+}
 .QuestionContainer{
-    padding: 20px 10px; 
-    border: 1px solid #000;
-    border-radius: 10px;
+    padding: 20px 10px;
+    -webkit-box-shadow: 0 2px 3px #aaa;
+    box-shadow: 0 2px 3px #aaa;
+    max-width: 1070px;
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 5px;
 }
 .QuestionBox{
     margin-bottom:20px;
 }
 .QuestionBox h1{
-    color: #84c2df;
+    color: #24292e;
     margin-bottom:15px;
+    padding-bottom:20px;
+    border-bottom: 1px solid #eaecef;
+}
+.QuestionBox p{
+    font-size:20px;
+    color: #0366d6;
+}
+.QuestionBox p span{
+    color: #24292e;
 }
 .postContainer{
     min-height: 100px;
-    margin-left:25px;
     position: relative;
 }
 .emptyPost{
@@ -25,5 +41,15 @@
 }
 .form{
     border: 1px solid #ccc;
+    background-color: #fafbfc;
+    width:100%;
+}
+.form h2{
+    margin-top: 20px;
+    color: #944317;
     text-align: center;
+}
+.form button{
+    margin:0 auto;
+    display: block;
 }

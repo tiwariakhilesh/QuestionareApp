@@ -1,0 +1,7 @@
+.Header{
+    width:100%;
+    color: rgba(255,255,255,0.75);
+    background-color: #24292e;
+    padding:12px 10px;
+    box-shadow: 0 2px 3px #000;
+}

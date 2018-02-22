@@ -25,8 +25,8 @@ import classes from './post.css';
         render(){
             return(
                 <div className={classes.post}>
-                    <p><strong>Answer:</strong>{this.props.formDetails.description}</p>
-                    <p><strong>Posted by</strong> : {this.props.formDetails.name}</p>
+                    <p><strong>Answer:</strong> {this.props.formDetails.description}</p>
+                    <p><strong>Posted by:</strong>  {this.props.formDetails.name}</p>
                     <p><strong>email:</strong> {this.props.formDetails.email}</p>
                     <button className={classes.buttonUpvote} onClick={this.upVote} >upVote : {this.state.upVote}</button>
                    <button className={classes.buttonDownvote} onClick={this.downVote}>downVote : {this.state.downVote}</button>

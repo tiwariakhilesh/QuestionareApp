@@ -1,7 +1,8 @@
 import React,{Component} from 'react';
 import classes from './QuestionContainer.css';
 import Form from '../form/form';
-import Post from '../../components/post/post'
+import Post from '../../components/post/post';
+import Header from '../../components/Header/Header'
 class QuestionContainer extends Component{
     state={
         formDetails:null,
@@ -30,18 +31,21 @@ class QuestionContainer extends Component{
             post= <p className={classes.emptyPost}>No responses Yet</p>
         }
         return(
-            <div className={classes.QuestionContainer}>
-                <div className={classes.QuestionBox}>
-                    <h1>Github Questionare</h1>
-                    <p><strong>Question: How To use LifeCycles in React js</strong></p>
-                </div>
-                <div className= {classes.postContainer}>
-                    {post}
-                </div>
-                   
-                <div className={classes.form}>
-                    <h2>Submit Your Answer Here</h2>
-                    <Form formDetails={this.formDetails}/>
+            <div className={classes.container}>
+                <Header/>
+                <div className={classes.QuestionContainer}>
+                    <div className={classes.QuestionBox}>
+                        <h1>Github Questionare</h1>
+                        <p><strong> <span>Problem Statement:</span> How To use LifeCycles in React js</strong></p>
+                    </div>
+                    <div className= {classes.postContainer}>
+                        {post}
+                    </div>
+                    
+                    <div className={classes.form}>
+                        <h2>Submit Your Answer Here</h2>
+                        <Form formDetails={this.formDetails}/>
+                    </div>
                 </div>
             </div>
         )

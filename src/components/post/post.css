@@ -19,6 +19,7 @@
     padding: 10px;
     margin-bottom:15px;
     width:100%;
+    box-shadow: 0 2px 3px #ccc;
 }
 .post p{
     display:block;
